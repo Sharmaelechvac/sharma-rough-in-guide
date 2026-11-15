@@ -129,7 +129,7 @@ function toast(msg) {
 function shell(body, tab) {
   return `
   <header class="top">
-    <img class="logo" src="${BASE}/logo.png" alt="Sharma Electric & HVAC">
+    <img class="logo" src="${BASE}/sharma-logo.svg" alt="Sharma Electric & HVAC">
     <div class="titles">
       <b>Residential Rough-In Guide</b>
       <span>By Sharma Electric & HVAC</span>
@@ -143,9 +143,9 @@ function shell(body, tab) {
     <p class="foot">${esc(LIC)}</p>
   </main>
   <nav class="tab">
-    <a href="/" class="${tab === "home" ? "on" : ""}"><span>🔎</span>Look up</a>
-    <a href="/ask" class="${tab === "ask" ? "on" : ""}"><span>💬</span>Ask the NEC</a>
-    <a href="/practice" class="${tab === "practice" ? "on" : ""}"><span>📝</span>Practice</a>
+    <a href="/" class="${tab === "home" ? "on" : ""}">Look up</a>
+    <a href="/ask" class="${tab === "ask" ? "on" : ""}">Ask the NEC</a>
+    <a href="/practice" class="${tab === "practice" ? "on" : ""}">Practice</a>
   </nav>`;
 }
 
@@ -538,6 +538,7 @@ function renderAsk() {
 
 function roughHero() {
   return `<a class="card hero-rough" href="/roughin">
+    <figure class="hero-photo"><img src="${BASE}/sharma-panel-rough-in-hero.svg" alt="Sharma panel rough-in: loadcenter on a block wall with home runs up to the trusses" width="800" height="600" loading="eager" fetchpriority="high"><figcaption>Sharma Electric &amp; HVAC job photo: panel rough-in, home runs up to the trusses.</figcaption></figure>
     <div class="hero-kicker">Biggest section</div>
     <b>Residential Rough-in</b>
     <p>The full house guide: room by room, boxes and heights, wire and stapling, home runs, smoke and CO, and the inspection walk.</p>
