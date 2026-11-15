@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&family=Inter:wght@400;600;700&family=IBM+Plex+Mono:wght@600&display=swap');
+/* Sharma brand layer (2026-11-15, Mark Cuban / Design). Loaded after app.css.
+   Navy #264387 / dark navy #1a2f61 / gold #F0A846. Barlow Semi Condensed headings, Inter body, IBM Plex Mono for numbers. */
+:root { --ok:#1f7a3e; --ok-bg:#eaf4ee; --fix:#b3261e; --fix-bg:#fbeceb; }
+body { font-family: 'Inter', Arial, sans-serif; background:#f4f6fb; }
+h1, h2, .titles b, .sheet-title, .hero-rough b, .ask-teaser b, .score-hero .big, .quiz-head h3, .cheat-brand {
+  font-family: 'Barlow Semi Condensed', 'Arial Narrow', Arial, sans-serif; font-weight: 700; letter-spacing: 0; }
+h1 { font-size: 30px; color: #1a2f61; }
+h2 { font-size: 22px; color: #1a2f61; }
+h3 { font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-weight: 700; font-size: 15px; letter-spacing: .06em; color: #264387;
+  border-bottom: 2px solid #F0A846; padding-bottom: 4px; }
+.stat-card .stat-num, .kpi b, .score-hero .big, .num, .mod .num, .ri-badge, .step-num { font-family: 'IBM Plex Mono', ui-monospace, monospace; }
+
+/* Header: white bar, real logo, gold rule */
+.top { background:#fff; border-bottom: 3px solid #F0A846; padding-top: max(8px, var(--safe-t)); padding-bottom: 8px; }
+.top .logo { height: 34px; max-width: 170px; padding: 0; background: none; border-radius: 0; box-shadow: none; }
+.titles b { font-size: 20px; color:#1a2f61; line-height:1.05; }
+.titles span { font-size: 12px; color:#5b6478; }
+
+/* Flat surfaces */
+.card, a.card, button.card { border-radius: 6px; border: 1px solid #dfe4ee; box-shadow: none; }
+a.card:active, button.card:active, .btn:active, .ri-tile:active, .choice:active { transform: none; }
+a.card:hover, .ri-tile:hover, .tile:hover { border-color: #264387; }
+.btn { border-radius: 4px; background:#264387; box-shadow:none; font-weight:700; }
+.btn.ok { background:#1f7a3e; }
+.btn.ghost { background:#fff; color:#264387; border:1.5px solid #264387; }
+input.txt, select.sel, textarea.area { border-radius: 4px; background:#fff; }
+.search-wrap input.txt { border-radius: 4px; border: 2px solid #264387; box-shadow:none; }
+
+/* Navy panels: white headings, readable body text, gold link */
+.ask-teaser, .hero-rough, .score-hero { background:#1a2f61; border-radius:6px; border-left: 6px solid #F0A846; }
+.ask-teaser b, .hero-rough b, .score-hero b { color:#fff; }
+.ask-teaser p, .hero-rough p, .score-hero .muted { color:#d6dcec; }
+.ask-teaser .go, .hero-rough .go { color:#F0A846; }
+.hero-rough .hero-kicker { color:#F0A846; }
+.ask-teaser.setup { background:#fff; border-left: 6px solid #dfe4ee; }
+.ask-teaser.setup b { color:#1a2f61; }
+
+/* Real job photo hero */
+.hero-photo { margin: 0 0 14px; }
+.hero-photo img { display:block; width:100%; height:auto; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 4px; }
+.hero-rough .hero-photo { margin: -20px -18px 16px; }
+.hero-rough .hero-photo img { border-radius: 6px 6px 0 0; aspect-ratio: 16 / 9; }
+.hero-photo figcaption { font-size: 12px; color:#5b6478; margin-top: 6px; }
+.hero-rough .hero-photo figcaption { color:#d6dcec; padding: 0 18px; }
+
+/* Notices: plain, square */
+.banner { border-radius: 4px; background:#fff8ec; border:1px solid #F0A846; border-left: 6px solid #F0A846; color:#5a3d08; }
+.pill, .rule-pill, .amp-pill { border-radius: 3px; }
+
+/* Bottom tab bar: text labels, no emoji, gold marker on the active tab */
+nav.tab { background:#fff; border-top: 1px solid #dfe4ee; }
+nav.tab a { font-family:'Barlow Semi Condensed', Arial, sans-serif; font-weight:700; font-size: 16px; letter-spacing:.02em;
+  padding: 14px 0 12px; color:#5b6478; border-top: 3px solid transparent; }
+nav.tab a span { display:none; }
+nav.tab a.on { color:#1a2f61; border-top-color:#F0A846; }
+.ri-badge { border-radius: 4px; }
+.ri-badge.done { background:#1f7a3e; }
+.hero-photo img, .hero-rough .hero-photo img { aspect-ratio: auto !important; height: min(56vw, 320px) !important; max-height: none; }
